@@ -6,7 +6,7 @@ class SevenSegments:
     pos = [[],[],[],[],[],[],[]]
     number = 0,
     def __init__(self, num):
-        number = num
+        self.number = num
         self.pos = [[self.seg.w+(2*self.margin), self.margin, 90], 
         [self.pos[0][0] + self.seg.h+self.margin, 2*self.margin+self.seg.w, 0], 
         [self.pos[0][0] + self.seg.h+self.margin, 3*self.margin+self.seg.w+self.seg.h, 0], 
@@ -17,7 +17,7 @@ class SevenSegments:
         
     def update(self):
         for i in self.pos:
-            s = seg(self.pos[i][0], self.pos[i][1], self.pos[i][2], True)
+            s = Segment(self.pos[i][0], self.pos[i][1], self.pos[i][2], True)
             s.show()
             
     

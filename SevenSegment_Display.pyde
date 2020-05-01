@@ -6,5 +6,5 @@ def setup():
   background(0)
   noStroke()
   fill(102)
-  ss = SevenSegments(1)
-  ss.update()
+
+  
