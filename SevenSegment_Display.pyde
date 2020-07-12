@@ -13,5 +13,4 @@ def setup():
       s = SevenSegments(word[i], segs.SegmentW * i)
       s.update()
     except TypeError:
-      
       print("This character can not be written with Seven Segement Displays: {}".format(word[i]))
